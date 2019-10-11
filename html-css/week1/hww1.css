@@ -1,0 +1,82 @@
+#jy {
+    text-align: left;
+    color: blue;
+}
+
+#my-pic {
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 200px;
+    border: solid;
+    border-color: white; 
+    border-radius: 50%;
+}
+
+.Personal {
+    float: top;
+    margin-right: 25px;
+    margin: 50px;
+    margin-bottom: 20px;
+}
+.pr1 {
+    float: left;
+    margin-right: 50%;
+    margin-bottom: 50%;
+    margin: 5px;
+    padding: 20px;
+    font-size: 22px;
+    color: rgb(156, 12, 60);
+}
+
+.pr2 {
+    float: right;
+    margin-right: 50%;
+    margin-bottom: 50%;
+    margin: 5px;
+    padding: 20px;
+    font-size: 22px; 
+    color: rgb(156, 12, 60);  
+}
+
+.about-me {
+    background-color:rgb(200, 153, 238);
+    border-radius: 15px;
+    padding: 28px;
+    margin: 15px;
+    margin-top: 50px;
+    margin-left: 2px;
+    font-size: larger;
+    font-style: italic;
+    color: blue;
+    float: right;
+    width: 28%;
+    
+}
+.experiences {
+    background-color: rgb(252, 251, 250);
+    border-radius: 15px;
+    padding: 30px;
+    margin: 15px;
+    margin-top: 50px;
+    margin-left: 2px;
+    font-size: larger;
+    font-style: normal;
+    color: rgb(8, 8, 19);
+    float: left;
+    width: 60%;
+}
+body {
+    background-color: rgba(141, 231, 197, 0.774);
+    margin: 2%;
+}
+nav li {
+    display: inline-block;
+    float: right;
+    padding: 15px;
+    font-size:20px;
+}
+
+
+
+    
