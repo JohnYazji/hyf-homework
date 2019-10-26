@@ -1,0 +1,304 @@
+/* Component Needs */
+
+.pc-tab>input,
+.pc-tab section>div {
+display: none;
+}
+
+#tab1:checked~section .tab1,
+#tab2:checked~section .tab2,
+#tab3:checked~section .tab3,
+#tab4:checked~section .tab4 {
+display: block;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: #ecf0f1;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    font-size: 60px;
+    color: #e74c3c;
+}
+
+
+.pc-tab {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.pc-tab ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.pc-tab label.navigation, #submit {
+    display: block;
+    padding: 15px;
+    border-bottom: 0;
+    cursor : pointer;
+    border: 1px solid #000;
+    background: linear-gradient(#abaaf8 10%,white 60%,#abaaf8 150%);
+    width: 20%;
+    height: 7%;
+    margin-left: auto;
+    font-size: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+input {
+    margin: 10px 0px 10px 0px;
+    padding: 2px;
+    display: block;
+}
+
+#tab1:checked ~ nav .tab1 label,
+#tab2:checked ~ nav .tab2 label ,
+#tab3:checked ~ nav .tab3 label , 
+#tab4:checked ~ nav .tab4 label {
+    background: #fff;
+    position: relative;
+}
+
+#tab1:checked ~ nav .tab1 label:after,
+#tab2:checked ~ nav .tab2 label:after,
+#tab3:checked ~ nav .tab3 label:after,
+#tab4:checked ~ nav .tab4 label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    left: 0;
+    bottom: -1px;
+}
+
+section div {
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+section div h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+button {
+    background: none;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    .pc-tab ul {
+       flex-direction: column;
+    }
+    .pc-tab li {
+        width: 100%;
+    }
+
+label:after {
+height : 0px !important;
+}
+}
+
+     /*John CSS*/
+
+* {
+marg in: 3px;
+}
+body {
+    background-color: whitesmoke;
+}
+/*Porgress bar start*/
+
+progress {
+	width: 600px;
+	height: 25px;
+	-webkit-appearance: none;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+} 
+
+progress::-webkit-progress-bar {
+	background: rgb(190, 189, 250);
+	border-radius: 25px;
+}
+
+progress::-webkit-progress-value {border-radius: 25px;
+background:
+	-webkit-linear-gradient(#abaaf8 1%,white 60%, #abaaf8 99%)		
+}
+/*Porgress bar end*/
+
+
+/* Toggled State */
+input[type=checkbox]:checked ~ div {
+display: none;
+}
+
+
+ /* chacking needs */
+.images{
+    column-count: 4;
+    padding: 30px;
+    align-content: center;
+    border: 0px;
+}
+
+/*Navi Bar*/
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(248, 244, 244);
+  }
+  
+  .topnav a.active {
+    color: black;
+    }
+
+#nav-logo {
+ display: flex;
+ height: 155px;
+}
+
+#logo{
+width: 150px;
+position: relative;
+}
+
+.dropdown {
+    border: 0px;
+    margin: 0;
+    display: inline-block;
+    }
+
+.dropdown select {
+    border-radius: 8px;
+    border: rgb(8, 0, 0) 1px solid;
+    padding: 10px;
+    width: 50%;
+    margin-left: 0px;
+}
+
+.inputs input {
+    border-radius: 8px;
+    border: rgb(8, 0, 0) 1px solid;
+    padding: 10px;
+    display: inline-block;
+}
+
+.inputs{
+    border-radius: 8px;
+    border: 0px;
+    padding: 10px;
+    display: inline-block;
+}
+#submit {
+float: right;
+}
+#cvv, #year, #date, #expirymonth, #expiryyear{
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+.message {
+    width: 60%;
+    height: 100px;
+    margin-left: 5%;
+    border-radius: 8px;
+    border: 0.5px solid rgb(170, 173, 171); 
+}
+
+.profile-description {
+    width:100px;
+    font-size: 12px;
+    font-style: italic;
+    float: left; 
+    display: flex;
+}
+
+.Ne xt{
+    float: right;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: steelblue;
+}
+
+.Pre vious{
+    float: left;
+    border: 1px black solid;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: steelblue;
+}
+
+.newsletter {
+    display: flex;
+    columns: 3;
+    border: 0px;
+}
+
+
+.newsletter label {
+    flex-flow: column;
+    margin-left: 25px;
+}
+
+/*page 03*/
+
+#item-list input {
+padding-left: 15px;
+margin-left: 20px;
+}
+
+#item-list{
+    border: 0px;
+}
+.intersted{
+    border: 0px;
+}
+
+#previous {
+    float: left;
+}
+
+.tab2 {
+    border: 0px;
+}
+

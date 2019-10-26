@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Homework week 3 Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section id="nav-logo">
+       <!-- logo image start -->
+    <div id="logo"> 
+    <img src="logo.jpg"
+    alt="picture of a tree with good deed written under it" width=100px >
+        <!-- logo image end -->
+
+    </div>
+    <!--Navi Bar Start-->
+        <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#news">Men</a>
+                <a href="#news">Women</a>
+                <a href="#news">Kids</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+              </div>
+            </section>
+              <!--Navi Bar End-->
+        <form id="form1" method="post" action="success.html">
+        <div class="pc-tab">
+            <input checked="checked" id="tab1" type="radio" name="pct" />
+            <input id="tab2" type="radio" name="pct" />
+            <input id="tab3" type="radio" name="pct" />
+            <input id="tab4" type="radio" name="pct" />
+            <section>
+                <div class="tab1">
+                    <h2>Sign up to AboAlZelouf.com</h2> 
+                    <p>We can't wait to help you improve your life-style and gain the attention from people around you!</p>
+                        
+                    <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that match your preferences and style. Every week we will send you a hand-picked selection - we just need to know a few details about your first... </p>
+
+                    <h2>Step 1/4 - tell us who you are?</h2>
+                            
+                    <!-- progress bar start-->
+                   <label for="Progress">Progress</label></label>
+                    <progress max="100" value="25"></progress>
+                    <!-- progress bar end-->
+                    <p>Nice to meet you. Lets spend a minute to get to know each other? Please enter the following:</p>
+
+                    <!-- First page List Start-->
+                    
+                    <div class="inputs">
+                    <label for="firstname">First name*</label>
+                    <input type="text" class="input-required" id="firstname" name="firstname" required>
+
+                    <label for="lastname">Last name*</label>
+                    <input type="text" class="input-required" id="lastname" name="lastname" required><br>
+<div class="dropdown">
+                <label for="country">Country*</label>
+                  <select name="country">
+                     <option value="Select">Select</option>
+                     <option value="Denmark">Denmark</option>
+                     <option value="Germany">Germany</option>
+                     <option value="Spain">Spain</option>
+                     <option value="France">France</option>
+                  </select> </div><br>
+
+                        <label for="street address">Street address*</label>
+                        <input type="text" class="input-required" id="streetaddress" name="streetaddress" required>
+
+<label for="postcode">Post code*</label>
+<input type="text" maxlength="4" minlength="4" class="input-required" id="postcode" name="postcode" required>
+
+</div>
+
+<!--TOGGLE CODE START-->
+
+<label for="toggle-1">Shipping address</label>
+<input type="checkbox" id="toggle-1">
+                
+
+<div class="inputs">
+<label for="firstname">First name*</label>
+                <input type="text" class="input-required" id="firstname" name="firstname" required>
+                
+                <label for="lastname">Last name*</label>
+                <input type="text" class="input-required" id="lastname" name="lastname" required><br>
+                
+                <div class="dropdown"> 
+                <label for="country*">Country*</label>
+                <select name="country">
+                <option value="select">Select</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Germany">Germany</option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+                </select> </div><br>
+
+                <label for="street address">Street address*</label>
+                <input type="text" class="input-required" id="streetaddress" name="streetaddress" required>
+                <label for="postcode">Post code*</label>
+                <input type="text" maxlength="4" minlength="4"class="input-required" id="postcode" name="postcode" required><br>
+                
+<label for="message">Profile description</label><br>
+<textarea maxlength="500" class="message" id="message" name="message"></textarea>
+<p class="profile-description">Please provide a short description of yourself to be displayed on our social community pages</p>
+</div>
+                <!--TOGGLE CODE END-->
+                
+                <!--First Page End-->
+
+<label for="tab2" id="label2" class="navigation">Next Step</label>
+</div>
+
+            <!--Secound Page Start-->
+
+    <div class="tab2">
+
+    <div>
+    <h2>Sign up to AboAlZelouf.com</h2> 
+                              
+    <h3>Step 2/4 - How can we reach you?</h3>
+
+        <!-- progress bar start-->
+                    
+        <label for="Progress">Progress</label>
+        <progress max="100" value="50"></progress>
+                <!-- progress bar end-->
+                
+    <div class="inputs">
+     
+        <label for="email">Email*</label>
+         <input type="email" class="input-required" id="email" name="email" pattern="[a-zA-Z]{0-9}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" placeholder="Smith@doman.com" required>
+     
+        <label for="phone">Phone</label>
+        <input type="number" class="input-required" id="phone" name="phone" required><br>
+      
+        <label for="password">Password*</label>
+        <input type="password" minlength="10" class="input-required" id="password" name="password" required><br>
+        
+        <label for="password">Re-enter password*</label>
+        <input type="password" minlength="10" class="input-required" id="password" name="password" required>
+<br>
+
+
+
+    <p>I want to sign up for the newsletter.</p>
+    <div class="newsletter">
+    
+    <label for="weeklynews">Weekly news</label>    <input type="radio" name="weeklynews" value="weeklynews" checked>
+    <label for="monthlynews">Monthly news</label>
+    <input type="radio" name="monthlynews" value="monthlynews"> 
+    <label for="nonews">Don't send me news</label>
+    <input type="radio" name="Dontsendmenews" value="Dontsendmenews"> </div>
+    </div>
+        </div>
+
+        <label for="tab1"  id="previous" class="navigation">Previous Step</label>
+        <label for="tab3" id="label3" class="navigation">Next Step</label></div>
+                <!--Secound Page end-->
+
+                <!--Third page Start-->
+
+        <div class="tab3">
+
+         <div class="inputs"> 
+
+        <h2>Sign up to you AboAlZelouf.com</h2> 
+                              
+        <h3>Step 3/4 - Time to learn about your preferences.</h3>
+                                 
+            <!-- progress bar start-->
+                    
+        <label for="Progress">Progress</label>
+        <progress max="100" value="75"></progress>
+        <!-- progress bar end-->
+
+        <!--Offers Div Start-->
+         <div class="intersted">
+        <h3>What kind of items are you intersted in offres on?</h3>
+        
+     <div id="item-list">
+        <input type="checkbox" name="apparel" value="apparel"> Apparel
+        <input type="checkbox" name="accessories" value="accessories"> Accessories
+        <input type="checkbox" name="handbags" value="handbags"> Handbags
+        <input type="checkbox" name="jewelry" value="jewelry"> Jewelry
+        <input type="checkbox" name="shoes" value="shoes"> Shoes</div>
+    </div>
+                <!--Offers Div End-->
+
+                <!--Images Start-->
+
+        <div class="images"> 
+
+        <img src="https://freebestbd.com/wp-content/uploads/2019/03/Toddler-Baby-Kids-Girls-clothes-Flower-print-V-neck-sleeveless-Tulle-Bow-Casual-cotton-backless-Summer_800x800_STRETCH_1.jpg" alt="Baby" width="100px" height="100%"><br>
+        <label for="men_casual_shirts">Select</label>
+        <input type="checkbox" id="men_casual_shirts"><img>
+        <!--Labels "for" and "id" need to be checked-->
+                        
+        <img src="http://g02.a.alicdn.com/kf/HTB1pWBJMpXXXXblXXXXq6xXFXXX0/Spring-2016-girls-Plaid-dress-brand-children-s-font-b-clothing-b-font-font-b-kids.jpg" alt="Kids" width="100px" height="100%"><br>
+        <label for="men_casual_shirts">Select </label>
+        <input type="checkbox" id="men_casual_shirts"><img>
+
+        <img src="https://freebestbd.com/wp-content/uploads/2019/02/Brand-New-100-Cotton-Military-Cargo-Shirt-Men-Short-Sleeve-Plus-Size-4XL-5XL-Summer-Army_800x800_STRETCH_6.jpg" alt="Shirts" width="100px" height="100%"><br>
+        <label for="men_casual_shirts">Select </label>
+        <input type="checkbox" id="men_casual_shirts"><img>
+
+        <img src="https://streetfashion2017blog.files.wordpress.com/2017/06/1-buy-jessica-buurman-street-style-clothing-asabe-striped-pocket-pants-800x800.jpg?w=386&h=386" alt="Street fashon" width="100px" height="100%"><br>
+        <label for="men_casual_shirts">Select </label>
+        <input type="checkbox" id="men_casual_shirts"><img>
+
+        <img src="https://freebestbd.com/wp-content/uploads/2019/05/New-Cute-Type-Ladies-PU-Handbag-High-Quality-2019-Hot-Sale-Small-Girls-Exquisite-Color-Matching_800x800_STRETCH_1.jpeg" alt="Bags" width="100px" height="100%"><br>
+        <label for="men_casual_shirts">Select </label>
+        <input type="checkbox" id="men_casual_shirts"><img>
+
+        <img src="https://freebestbd.com/wp-content/uploads/2019/03/variants_Men-Casual-Shoes-Breathable-Male-Shoes-Tennis-Masculino-Shoes-Zapatos-Hombre-Sapatos-Outdoor-Shoes-Sneakers-Men_800x800_STRETCH_Gray.jpg" alt="Shoes" width="100px" height="100%"><br>
+        <label for="men_casual_shirts">Select </label>
+        <input type="checkbox" id="men_casual_shirts"><img>
+
+        <img src="https://freebestbd.com/wp-content/uploads/2019/03/BIGTREE-Shoes-Women-High-Heels-New-Women-Pumps-Sexy-Ladies-Shoes-Women-Sandals-Fashion-Kitten-Heels_800x800_STRETCH_6.jpg" alt="Women Shoes" width="100px" height="100%"><br>
+        <label for="men_casual_shirts">Select </label>
+        <input type="checkbox" id="men_casual_shirts"><img>
+
+        <img src="https://customers.mizunousa.com/img_catalog/360271_9290.jpg" alt="Travel Bags" width="100px" height="100%"><br>
+        <label for="men_casual_shirts">Select </label>
+        <input type="checkbox" id="men_casual_shirts"><img>
+
+        </div>
+                 <!--Images End-->
+                        
+        </div>
+                
+        <label for="tab2"  id="previous" class="navigation">Previous Step</label>
+        <label for="tab4" id="label4" class="navigation">Next Step</label>
+         </div>
+
+         <!--Third page  End-->
+
+        <!--Fourth page  Start-->
+
+        <div class="tab4">
+    
+
+        
+
+    <h2>Sign up to you AboAlZelouf.com</h2> 
+                                          
+    <h3>Step 4/4 - Payment.</h3>
+                                             
+        <!-- progress bar start-->
+        <label for="Progress">Progress</label>
+        <progress max="100" value="100"></progress>
+
+        <!-- progress bar end-->
+        <div class="inputs">
+
+    <h3>Please fill in your payment data</h3>
+
+    <label for="nameoncard">Name on card</label>
+    <input type="text" class="input-required" id="nameoncard" name="nameoncard" required> 
+    
+    <div class="dropdown">
+    <label for="cardtype*">Card type</label>
+    <select name="cardtype">
+    <option value="select">Select</option>
+    <option value="visa">Visa</option>
+    <option value="debit">Debit</option>
+    <option value="creditcards">Credit Card</option>
+    <option value=" mastercard"> Master Card</option>
+    </select> </div> <br>
+
+    <label for="cardnumber">Credit card number </label>
+  <input type="tel" maxlength="16" minlength="16" class="input-required" id="cardnumber"
+    name="cardnumber" required>
+
+     <label for="firstname">First name</label>
+    <input type="text" class="input-required" id="firstname" name="firstname" required><br>
+
+    <label for="expirymonth">Expiry month </label>
+    <input type="number" class="input-required" id="expirymonth" name="expirymonth" required> <br>
+
+    <label for="expiryyear">Expiry year</label>
+    <input type="text" name="Expiry date" id="expiryyear"> 
+
+    <label for="cvv">CVV </label>
+    <input type="tel" maxlength="3" minlength="3" class="input-required" id="cvv" name="cvv" required><br>
+
+    <label for="tab3" id="previous" class="navigation">Previous Step</label>
+    <input type="submit" id="submit">
+    </div>
+                        
+        <!--Fourth page End-->
+
+    </form>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
