@@ -1,4 +1,8 @@
 1. Dubai.
 2. Greece.
 3. Spain.
+<<<<<<< HEAD
 4. Syria.
+=======
+4. Tyskland.
+>>>>>>> 7dfdae7a306a43646fcc82e6547df0e04bf5fa4f
