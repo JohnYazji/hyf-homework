@@ -26,7 +26,8 @@ let wideInMeters;
 let deepInMeters;
 let highInMeters;
 let gardenSizeInM2;
-let theHouseCosts;
+let peterTheHouseCosts;
+let juliaTheHouseCosts;
 let volumeInMeters = wideInMeters * deepInMeters * highInMeters; 
 
 // Peter House 
@@ -34,7 +35,7 @@ wideInMeters = 8;
 deepInMeters = 10;
 highInMeters = 10;
 gardenSizeInM2 = 100;
-theHouseCosts = 2500000;
+peterTheHouseCosts = 2500000;
 volumeInMeters = wideInMeters * deepInMeters * highInMeters;
 peterHousePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
 
@@ -44,14 +45,33 @@ wideInMeters = 5;
 deepInMeters = 11;
 highInMeters = 8;
 gardenSizeInM2 = 70;
-theHouseCosts = 1000000;
+juliaTheHouseCosts = 1000000;
 volumeInMeters = wideInMeters * deepInMeters * highInMeters;
 juliaHousePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
 
 housePriceDifference = peterHousePrice - juliaHousePrice; //the price difference between Julia and Peter's house
 
+// estimating of Peter's house 
 console.log("Peter's House Cost " + peterHousePrice);
+
+if (peterTheHouseCosts>peterHousePrice) {
+console.log("Peter is paying more much for this house than the actual price.")
+}
+else {
+console.log("Peter is paying less than the actule price.")
+};
+
+// estimating of Julia's house 
 console.log("Julia's House Cost " + juliaHousePrice);
+
+if (juliaTheHouseCosts>juliaHousePrice) {
+console.log("Julia is paying more much for this house than the actual price.")
+}
+else {
+console.log("Julia is paying less than the actual price.")
+};
+
+//calculating the difference
 console.log("The difference amount between Peter and Julia is " + housePriceDifference + " Peter is paying more than Julia.")
 
 // Ez Namey (Startup name generator) Optional
