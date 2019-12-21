@@ -1,0 +1,59 @@
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(199, 245, 245);
+}
+
+h1 {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 70px;
+    color: rgb(66, 55, 224);
+    text-align: center;
+    margin-top: 5%;
+}
+
+#firstdiv {
+text-align: center;
+margin-right: 20px;
+}
+
+#input {
+    width: 50%;
+    border-color: rgb(130, 110, 245);
+    padding: 15px;
+    margin-top: 4%;
+    color: rgb(255, 30, 0);
+}
+
+#button, #button2 {
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    padding: 40px;
+    background-color: rgb(250, 237, 247);
+    color: rgb(7, 6, 6);
+    margin-top: 5%;
+    margin-right: 3%;
+    padding-right: 30px;
+}
+
+section {
+display: flex;
+margin-top: 5%;
+width: 95%;
+}
+
+.sSide, 
+.lSide {
+    padding: 15%;
+    flex: 1;
+    border: 1px solid rgb(68, 39, 39);
+    
+}
