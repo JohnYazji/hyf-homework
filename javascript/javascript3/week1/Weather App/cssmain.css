@@ -1,0 +1,87 @@
+body{
+    margin:50px 300px;
+    padding:0;
+    background-color: rgb(196, 192, 192);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;    
+    color:white;
+}
+main{
+    margin:10px;
+    padding:10px;
+    background-color: rgb(87, 74, 42);
+    width:90%;
+    height: 100%;
+    text-align: center;
+    border: 2px rgb(148, 210, 238) double;
+}
+#header > div{
+    margin:5px;
+    padding:5px;
+    font-weight: bold;
+    
+}
+#header{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: rgb(52, 208, 247);
+    margin: 5px;
+}
+#city{
+    margin:5px;
+    font-size: 60px;
+}
+#temp{
+       font-size: 45px;
+}
+#sect02 p{
+font-size: 30px;
+}
+
+.windstatus{
+    margin:0;
+    padding:0px;
+    width:150px;
+    display: inline-block;
+    
+}
+#sect02{
+    background-color: rgb(185, 246, 87);
+    margin-top:-20px;
+    margin:5px;
+
+}
+#sect02 p {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#thefooter{
+    background-color: rgb(245, 174, 67);
+    font-size: 20px;
+    margin-top:-18px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top: 2px;
+    padding:5px;
+}
+.container{
+width: 35px;
+height: 5px;
+background-color: rgb(208, 203, 233);
+margin: 6px 0;
+}
+@media only screen and (max-width: 900px){
+
+    body{
+        margin:0;
+        padding:0;
+
+    }
+    #city{
+       
+        font-size: 30px;
+    }
+    #temp{
+        font-size: 25px;
+ }
+}
