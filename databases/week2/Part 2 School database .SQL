@@ -2,10 +2,10 @@
 Class: with the columns: id, name, begins (date), ends (date)
 Student: with the columns: id, name, email, phone, class_id (foreign key)
 
+create database hyf_homework_DB2;
+use hyf_homework_DB2;
+
 SET NAMES utf8mb4;
-
-
-
 
 CREATE TABLE `class1` (
   
