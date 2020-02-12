@@ -22,14 +22,14 @@ WHERE id = 2;
 -- Change a task status
 
 UPDATE task
-SET status = ''
+SET status_id = 2
 WHERE id = 2;
 
 
 -- Mark a task as complete
 UPDATE task 
 SET status_id = 3 
-WHERE id = 35;
+WHERE id = 2;
 
 -- Delete a task
 DELETE FROM task
