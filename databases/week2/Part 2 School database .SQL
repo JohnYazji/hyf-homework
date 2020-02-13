@@ -9,7 +9,7 @@ SET NAMES utf8mb4;
 
 CREATE TABLE `class1` (
   
-`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+`id` int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY, 
   
 `name` varchar(255) NOT NULL,
   
@@ -17,8 +17,6 @@ CREATE TABLE `class1` (
   
 `ends` timestamp,
   
-PRIMARY KEY (`id`)
-),
 ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 ----------------------------------------------
@@ -27,9 +25,9 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 
-CREATE TABLE `student2` (
+CREATE TABLE `student` (
 
-`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+`id` int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
 
 `name` varchar(255) NOT NULL,
 
@@ -38,7 +36,6 @@ CREATE TABLE `student2` (
 `phone` varchar(255) NULL,
 
 `classid` int(10),
-PRIMARY KEY (id),
 
 FOREIGN KEY (classid) REFERENCES class(id) 
 );
