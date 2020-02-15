@@ -18,7 +18,7 @@ CREATE TABLE `Meal` (
   
 `location` varchar(255) NOT NULL,
   
-`when` datetime timestamp,
+`when` datetime DEFAULT CURRENT_TIMESTAMP,
   
 `max_reservations` int (10) unsigned NOT NULL,
   
@@ -39,7 +39,8 @@ CREATE TABLE `Reservation` (
 `meal_id` int (10) unsigned NOT NULL,
   
 `created_date` date
- NOT NULL);
+ NOT NULL
+);
 
 
 
@@ -55,8 +56,7 @@ CREATE TABLE `Review` (
   
 `stars` int (5) unsigned  NULL,
   
-`created_date` date
- NOT NULL,
+`created_date` date NOT NULL
 );
 
 
@@ -137,7 +137,7 @@ WHERE id = 6;
 -- Update a meal with any id
 
 UPDATE Meal 
-SET Title = "،Kabab", `Description` = "Yammiii", Location = "Nakskov", `When` = "2020-07-16 13:00:00" , Max_reservations = "15", Price = 40, Created_date = "2020-07-15 18:00:00" 
+SET Title = "Kabab", `Description` = "Yammiii", Location = "Nakskov", `When` = "2020-07-16 13:00:00" , Max_reservations = "15", Price = 40, Created_date = "2020-07-15 18:00:00" 
 WHERE Id = 3;
 
 -- Delete a meal with any id, fx 1
@@ -216,67 +216,6 @@ WHERE Id = 3;
 -------------------------------------------
 
 -- Additional queries...
-
--- add a couple of different meals, reservations and reviews with different attributes.
-
-create database meal_application02;
-use meal_application02;
-
-SET NAMES utf8mb4;
-
-
-
-CREATE TABLE `Meal` (
- 
-`id` int (10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  
-`title` varchar(255) NOT NULL,
-  
-`description` text NOT NULL,
-  
-`location` varchar(255) NOT NULL,
-  
-`when` datetime timestamp,
-  
-`max_reservations` int (10) unsigned NOT NULL,
-  
-`price` decimal (4) NOT NULL,
-  
-`created_date` date
- NOT NULL
-);
-
-
-
-CREATE TABLE `Reservation` (
-  
-`id` int (10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  
-`number_of_guests` int (10) unsigned NOT NULL,
-  
-`meal_id` int (10) unsigned NOT NULL,
-  
-`created_date` date
- NOT NULL);
-
-
-
-CREATE TABLE `Review` (
-  
-`id` int (10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  
-`title` varchar(255) NOT NULL,
-  
-`description` text NOT NULL,
-  
-`meal_id` int(10) unsigned  NOT NULL,
-  
-`stars` int (5) unsigned  NULL,
-  
-`created_date` date
- NOT NULL,
-);
-
 
 
 INSERT INTO Meal (Title, `Description`, Location, `When`, Max_reservations, Price, Created_date) 
