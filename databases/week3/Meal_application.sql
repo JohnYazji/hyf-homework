@@ -81,7 +81,7 @@ insert into meal (title, description, location, `when`, max_reservations, price,
 values ('Hummus', 'chickpeas in tahini', 'København', '2020-05-18 14:00:00', 2, 10, '2020-05-17 00:00:00');
 insert into meal (title, description, location, `when`, max_reservations, price, created_date) 
 
-values ('Labneh', 'Strained yogurt', 'København', '2020-04-10 17:00:00', 10, 20, '2020-04-08 00:00:00');
+values ('Rød grød med fløde', 'Strained yogurt', 'København', '2020-04-10 17:00:00', 10, 20, '2020-04-08 00:00:00');
 
 --------------------------------------------
 
@@ -273,19 +273,20 @@ select * from meal where price < 90
 
 -- Get meals that still has available reservations...
 
-select Meal.Id,Meal.Title, Meal.max_reservation ,sum(Reservation.number_of_guests) as total
+select Meal.Id,Meal.Title, Meal.max_reservations, sum(Reservation.number_of_guests) as total
 from Meal
 inner join Reservation on Reservation.meal_id = Meal.Id
-having total < max_reservation;
+GROUP BY meal.id
+having total < max_reservations;
 
 -- Get meals that partially match a title. Rød grød med will match the meal with the title Rød grød med fløde...
 
 SELECT * from meal   
-where Meal.Title like '%Rød grød med%';
+where title like '%Rød grød med%';
 
 --Get meals that has been created between two dates...
 SELECT * FROM meal 
-WHERE created_date BETWEEN '2020-01-10' AND '2020-01-11';
+WHERE created_date BETWEEN '2020-03-11' AND '2020-05-17';
 
 -- Get only specific number of meals fx return only 5 meals
 select * from meal
@@ -306,6 +307,6 @@ ORDER by reservation.created_date ASC;
 
 -- Sort all meals by average number of stars in the reviews
 select meal.title, AVG(review.stars) from meal 
-inner join review on review.review_meal_id = meal.id
+inner join review on review.meal_id = meal.id
 group by meal.title
 ORDER by review.stars asc;
