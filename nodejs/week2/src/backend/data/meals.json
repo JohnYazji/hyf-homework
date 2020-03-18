@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "Indian food in the summer",
+      "maxNumberOfGuests": 5,
+      "description": "A nice night out eating delicious indian food",
+      "createdAt": "2019/12/7 14:34",
+      "price": 67
+    },
+    {
+        "id": 2,
+        "title": "Syrian food in the summer",
+        "maxNumberOfGuests": 6,
+        "description": "A nice night out eating delicious indian food",
+        "createdAt": "2019/10/4 10:30",
+        "price": 100
+      },
+      {
+        "id": 3,
+        "title": "Danish food in the summer",
+        "maxNumberOfGuests": 7,
+        "description": "A nice night out eating delicious indian food",
+        "createdAt": "2018/11/7 11:14",
+        "price": 85
+      }
+  ]
