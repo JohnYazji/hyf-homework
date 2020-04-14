@@ -88,17 +88,18 @@ toggleCompleted = (currentIndex) => {
       };
   } else {
     return todo;
-  };
-}), 
-  }),
+  }
+}),
+});
+};
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1> My todo list</h1>
-    <App />
+    <TodoListItem />
   </React.StrictMode>,
-  document.getElementById('root')
-);
+  document.getElementById('root') 
+  );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
