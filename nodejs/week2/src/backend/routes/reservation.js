@@ -1,10 +1,19 @@
-const express = require ("express");
-const router = express();
+const express = require("express");
+const router = express.Router();
+const reservations = require("../data/reservations.json");
 
-const reservation = require("../data/reservations.json");
+router.get("/reservations", (request, response) => {
+  const reservationIs = reservations.filter(
+    item => item.id == request.query.id
+  );
 
-router.get("/reservation",(request,response) => {
-    response.json(reservation[Math.floor(Math.random()* reservation.length)]);
-})
+  if (request.url === "/reservations") {
+    response.json(reservations);
+  } else if (reservationIs.length === 0) {
+    response.send("sorry, we are not able to find the reservation you are looking for");
+  } else {
+    response.send(reservationIs);
+  }
+});
 
-module.exports = router; 
+module.exports = router;
