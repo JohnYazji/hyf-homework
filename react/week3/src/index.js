@@ -25,7 +25,6 @@ const TodoItems = (props) => {
   const showItems = length ? (
     items.map((item) => {
       return (
-        <div>
           <li
             key={item.id}
             style={{ textDecoration: item.completed ? "line-through" : "none" }}
@@ -39,8 +38,9 @@ const TodoItems = (props) => {
             <button onClick={() => deleteItem(item.id)}>Delete</button>
             <button onClick={() => editItem(item.id)}>Edit</button>
 
+          
           </li>
-        </div>
+      
       );
     })
   ) : (
@@ -64,7 +64,7 @@ class AddItem extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
-    if (this.state.description === "" || this.state.deadline === "") {
+    if (!this.state.description || !this.state.deadline) {
       console.log("false");
     } else {
       this.props.addItem(this.state);
@@ -80,8 +80,8 @@ class AddItem extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <p>
-            Todo description :
-            <input  type="text"   placeholder="Enter description"   id="description"   onChange={this.handleChange}  value={this.state.description}  />
+          <label>Todo description :
+            <input  type="text"   placeholder="Enter description"   id="description"   onChange={this.handleChange}  value={this.state.description}  /> </label>
           </p>
           <p>
             deadline :
