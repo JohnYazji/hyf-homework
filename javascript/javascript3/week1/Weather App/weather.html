@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Weather App</title>
+    <link rel="stylesheet" href="cssmain.css">
+</head>
+
+<body>
+    <main>
+         
+        <input type="text" placeholder="The city name" id="nameCity"></input>
+        <button id="search" onclick="weatherOfCurrentCity()">Search</button>
+        <button id="location1" onclick="yourLocation()">Current Location</button>
+
+        <section id="header">
+
+            <div id="img">
+                    <p id="cloud">Cloudy Weather</p>  
+            </div>
+ 
+            <div>
+                <p id="location">City</p>
+                <p id="temp">°C</p>
+            </div>
+         
+        </section>
+        <section id="sect02">
+                <div class= "windstatus">
+                        <p>Humidity</p>
+                        <p id= "Humidity">%</p>
+                    </div>
+                    <div class= "windstatus">
+                            <p>Degree</p>
+                        <p id= "Degree">deg</p>
+                    </div>
+                    <div class= "windstatus">
+                            <p>Wind</p>
+                            <p id= "Speed">m/s</p>
+                        </div>
+                    <div class= "windstatus">
+                            <p >Pressure</p>
+                        <p id="Pressure">hPa</p>
+                    </div>
+        </section>
+        <section id="thefooter">
+
+        <p>Today: <span id="climate">Climate</span> with <span id="speed">speed</span> .The high will be <span id="maxtemp">max_temp</span> and low will be <span id= "mintemp">min_temp.</span></p>
+
+        </section>
+    </main>
+    <script src="wearther.js"></script>
+
+</body>
+
+</html>
